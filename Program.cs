@@ -17,3 +17,22 @@ void Hello (string nev, int kor) {
 }
 
 Hello("andrás", 1);
+
+int abs_max (int a, int b) {
+    int aAbs = Math.Abs(a);
+    int bAbs = Math.Abs(b);
+    if (aAbs > bAbs) {
+        return(aAbs);
+    } else {
+        return(bAbs);
+    }
+}
+
+Console.WriteLine(abs_max(12, -15));
+
+int fibo (int sorszam) {
+    int alapLista = [0, 1];
+    for (int i = 2; i < sorszam; i++) {
+        alapLista[i] = ;
+    }
+}
