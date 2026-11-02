@@ -39,3 +39,36 @@ int fibo (int sorszam) {
 }
 
 Console.WriteLine(fibo(10));
+
+// Jelszóerősség mérő
+// Magánhangzó eltávolítás
+// Szöveg titkosítása
+
+int jelszo_erosseg (string jelszo) {
+    int pontszam = 1;
+    
+    if (jelszo.Count() >= 5) {
+        pontszam++;
+    }
+    
+    if (jelszo.Count() >= 8) {
+        pontszam += 2;
+    }
+
+    for (int i = 0; i < jelszo.Count(); i++) {
+        if (jelszo[i] == '_' || jelszo[i] == '-' || jelszo[i] == '.') {
+            pontszam += 2;
+        }
+    }
+    
+    if (jelszo.Contains("jelszo") || jelszo.Contains("123") || jelszo.Count() == 0) {
+        pontszam = 0;
+    }
+    
+    return(pontszam);
+}
+
+Console.WriteLine(jelszo_erosseg("hazi_macska_4_life"));
+Console.WriteLine(jelszo_erosseg("ez1feltorhetetlenjelszo"));
+Console.WriteLine(jelszo_erosseg("forloopTeszt_"));
+Console.WriteLine(jelszo_erosseg("forloopTeszt"));
