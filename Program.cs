@@ -31,8 +31,11 @@ int abs_max (int a, int b) {
 Console.WriteLine(abs_max(12, -15));
 
 int fibo (int sorszam) {
-    int alapLista = [0, 1];
-    for (int i = 2; i < sorszam; i++) {
-        alapLista[i] = ;
+    List<int> alapLista = [0, 1];
+    for (int i = 2; i <= sorszam; i++) {
+        alapLista.Add(alapLista[i-1] + alapLista[i-2]);
     }
+    return(alapLista[alapLista.Count()-1]);
 }
+
+Console.WriteLine(fibo(10));
