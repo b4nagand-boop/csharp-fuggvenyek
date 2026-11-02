@@ -1,0 +1,38 @@
+# Build output directories
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+[Tt]est[Rr]esults/
+[Bb]uild/
+[Bb]ld/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+artifacts/
+
+# Visual Studio files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# IDE & Editor specific configurations
+.vscode/
+.idea/
+
+# NuGet packages (if not using automatic package restore)
+[Pp]ackages/
+*.nupkg
+
+# .NET specific files
+project.lock.json
+project.fragment.lock.json
+*.pid
+*.seed
+
+# Local environment variables / configuration secrets
+.env
+.env.local
