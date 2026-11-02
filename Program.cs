@@ -72,3 +72,16 @@ Console.WriteLine(jelszo_erosseg("hazi_macska_4_life"));
 Console.WriteLine(jelszo_erosseg("ez1feltorhetetlenjelszo"));
 Console.WriteLine(jelszo_erosseg("forloopTeszt_"));
 Console.WriteLine(jelszo_erosseg("forloopTeszt"));
+
+string maganhangzot_torol(string bemenet) {
+    List<char> maganhangzok = ['a', 'á', 'e', 'é', 'i', 'í', 'o', 'ó', 'ö', 'ő', 'u', 'ú', 'ü', 'ű'];
+    string feldolgozott = "";
+    for (int i = 0; i < bemenet.Count(); i++) {
+        if (!maganhangzok.Contains(bemenet[i])) {
+            feldolgozott += bemenet[i];
+        }
+    }
+    return(feldolgozott);
+}
+
+Console.WriteLine(maganhangzot_torol("Iden Java szigeten voltunk nyaralni. Nem is tudtam, hogy elneveztek egy helyet egy programozasi nyelvrol."));
