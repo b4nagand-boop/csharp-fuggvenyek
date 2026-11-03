@@ -88,14 +88,8 @@ Console.WriteLine(maganhangzot_torol("Iden Java szigeten voltunk nyaralni. Nem i
 
 string kodol (string bemenet, int n, char karakter) {
 	string feldolgozott = "";
-	string temp = "";
 	for (int i = 0; i < bemenet.Count(); i++) {
-		feldolgozott += bemenet[i];
-		temp = "";
-		for (int j = 0; j < n; j++) {
-			temp += karakter;
-		}
-		feldolgozott += temp;
+		feldolgozott += bemenet[i] + new string(karakter, n);
 	}
 	return(feldolgozott);
 }
