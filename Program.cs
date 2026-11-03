@@ -85,3 +85,19 @@ string maganhangzot_torol(string bemenet) {
 }
 
 Console.WriteLine(maganhangzot_torol("Iden Java szigeten voltunk nyaralni. Nem is tudtam, hogy elneveztek egy helyet egy programozasi nyelvrol."));
+
+string kodol (string bemenet, int n, char karakter) {
+	string feldolgozott = "";
+	string temp = "";
+	for (int i = 0; i < bemenet.Count(); i++) {
+		feldolgozott += bemenet[i];
+		temp = "";
+		for (int j = 0; j < n; j++) {
+			temp += karakter;
+		}
+		feldolgozott += temp;
+	}
+	return(feldolgozott);
+}
+
+Console.WriteLine(kodol("Pizza delben?", 3, 'x'));
